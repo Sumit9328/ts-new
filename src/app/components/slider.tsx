@@ -29,7 +29,7 @@ const slides = [
 
 export default function Slider() {
   return (
-    <section className="bg-[var(--surface)] py-14 md:py-20">
+    <section className="bg-[#edeff1] py-14 md:py-20">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <Splide
           options={{

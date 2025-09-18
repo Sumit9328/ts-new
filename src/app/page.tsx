@@ -16,13 +16,13 @@ export default function Home() {
       </div>
 
 
-      <div className="overflow-hidden animate-fade-in">
+      <div className="overflow-hidden animate-fade-in mt-16 ">
         <div>
           <Slides />
         </div>
       </div>
 
-      <section className="overflow-hidden py-10 md:py-14">
+      <section className="overflow-hidden bg-[#edeff1] py-10 md:py-14">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="container-fluid p-0 m-0">
             <div className="row g-6 items-center">

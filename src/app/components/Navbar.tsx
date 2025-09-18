@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="shadow-lg">
+    <header className="shadow-lg fixed top-0 z-10 w-full mb-6">
       {/* Top Bar */}
-      <div className="bg-[#00448b] text-white text-[15px]">
+      <div className="bg-[#103b84] text-white text-[15px]">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-0 py-2">
           {/* Left Side */}
           <div className="flex items-center space-x-6">

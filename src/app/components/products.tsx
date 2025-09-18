@@ -57,7 +57,7 @@ const ProductShowcase = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[var(--background)] py-14 md:py-16 px-3 md:px-4">
+    <div className="min-h-screen bg-[#edeff1] py-14 md:py-16 px-3 md:px-4">
       <div className="max-w-7xl mx-auto px-1 md:px-2 lg:px-0">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
