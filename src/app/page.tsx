@@ -4,6 +4,7 @@ import Slides from "./components/slider";
 import ProductShowcase from "./components/products";
 import CompanyFooter from "./components/CompanyFooter";
 import DesignCapabilitySlider from "./components/DesignCapabilitySlider";
+import ImageSlider from "./components/ImageSlider";
 
 export default function Home() {
   return (
@@ -102,6 +103,17 @@ export default function Home() {
           <DesignCapabilitySlider />
         </div>
       </div>
+
+      
+
+  <div className="overflow-hidden animate-fade-in mt-0 ">
+        <div>
+          <ImageSlider />
+        </div>
+      </div>
+
+
+
 
       <div className="overflow-hidden animate-fade-up">
         <div>
