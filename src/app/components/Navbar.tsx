@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <header className="shadow-lg">
       {/* Top Bar */}
-      <div className="bg-black text-white text-[15px]">
+      <div className="bg-[#00448b] text-white text-[15px]">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-0 py-2">
           {/* Left Side */}
           <div className="flex items-center space-x-6">
