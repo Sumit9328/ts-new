@@ -1,7 +1,4 @@
-// components/Navbar.js
-"use client"
-// components/Navbar.js
-// components/Navbar.js
+"use client";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -10,28 +7,70 @@ export default function Navbar() {
 
   return (
     <header className="shadow-lg fixed top-0 z-50 w-full">
-      {/* Top Bar Desktop */}
       <div className="bg-[#103b84] text-white text-[15px] hidden md:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
-          {/* Left Side */}
           <div className="flex items-center space-x-6">
             <span className="flex items-center space-x-1">
-              <Image src="/assets/images/phone.png" alt="Phone" width={16} height={16} />
+              <Image
+                src="/assets/images/phone.png"
+                alt="Phone"
+                width={16}
+                height={16}
+              />
               +91-99107-12786
             </span>
             <span className="flex items-center space-x-1">
-              <Image src="/assets/images/envelope.png" alt="Email" width={18} height={18} />
+              <Image
+                src="/assets/images/envelope.png"
+                alt="Email"
+                width={18}
+                height={18}
+              />
               accounts@delconindustries.in
             </span>
           </div>
 
-          {/* Right Side Social */}
           <div className="flex items-center space-x-3">
-            <a href="#"><Image src="/assets/images/facebook.png" alt="Facebook" width={22} height={22} /></a>
-            <a href="#"><Image src="/assets/images/twitter.png" alt="Twitter" width={22} height={22} /></a>
-            <a href="#"><Image src="/assets/images/linkedin.png" alt="LinkedIn" width={22} height={22} /></a>
-            <a href="#"><Image src="/assets/images/pinterest.png" alt="Pinterest" width={22} height={22} /></a>
-            <a href="#"><Image src="/assets/images/instagram.png" alt="Instagram" width={22} height={22} /></a>
+            <a href="#">
+              <Image
+                src="/assets/images/facebook.png"
+                alt="Facebook"
+                width={22}
+                height={22}
+              />
+            </a>
+            <a href="#">
+              <Image
+                src="/assets/images/twitter.png"
+                alt="Twitter"
+                width={22}
+                height={22}
+              />
+            </a>
+            <a href="#">
+              <Image
+                src="/assets/images/linkedin.png"
+                alt="LinkedIn"
+                width={22}
+                height={22}
+              />
+            </a>
+            <a href="#">
+              <Image
+                src="/assets/images/pinterest.png"
+                alt="Pinterest"
+                width={22}
+                height={22}
+              />
+            </a>
+            <a href="#">
+              <Image
+                src="/assets/images/instagram.png"
+                alt="Instagram"
+                width={22}
+                height={22}
+              />
+            </a>
             <select className="bg-white text-black rounded px-2 py-1 text-sm">
               <option>Select Language</option>
               <option>English</option>
@@ -41,23 +80,19 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Main Navbar */}
       <nav className="bg-[#00448b] text-gray-200 shadow-md text-[15px]">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
-      {/* Logo */}
-<div className="flex items-center py-2">
-  <Image
-    src="/assets/images/dalcon-logo.png"
-    alt="Delcon Industries Logo"
-    width={150}  // Mobile default
-    height={40}  // Mobile default
-    className="object-contain md:w-[200px] md:h-[60px]" // Desktop
-    priority
-  />
-</div>
+          <div className="flex items-center py-2">
+            <Image
+              src="/assets/images/dalcon-logo.png"
+              alt="Delcon Industries Logo"
+              width={150}
+              height={40}
+              className="object-contain md:w-[200px] md:h-[60px]"
+              priority
+            />
+          </div>
 
-
-          {/* Desktop Links */}
           <ul className="hidden md:flex space-x-6 font-medium p-0 m-0">
             <li>Home</li>
             <li>About</li>
@@ -75,7 +110,6 @@ export default function Navbar() {
             <li>Contact Us</li>
           </ul>
 
-          {/* Mobile Hamburger */}
           <div className="md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -86,17 +120,25 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-[#00448b] text-gray-200 px-4 py-4 space-y-3 font-medium">
-            {/* Top Bar Info */}
             <div className="flex flex-col space-y-2 mb-2">
               <div className="flex items-center space-x-2">
-                <Image src="/assets/images/phone.png" alt="Phone" width={16} height={16} />
+                <Image
+                  src="/assets/images/phone.png"
+                  alt="Phone"
+                  width={16}
+                  height={16}
+                />
                 <span>+91-99107-12786</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Image src="/assets/images/envelope.png" alt="Email" width={18} height={18} />
+                <Image
+                  src="/assets/images/envelope.png"
+                  alt="Email"
+                  width={18}
+                  height={18}
+                />
                 <span>accounts@delconindustries.in</span>
               </div>
             </div>
@@ -121,4 +163,3 @@ export default function Navbar() {
     </header>
   );
 }
-

@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css"; // default splide css
+import "@splidejs/react-splide/css";
 
 const slides = [
   {
@@ -36,17 +36,17 @@ const slides = [
 const ImageSlider = () => {
   return (
     <div className="max-w-7xl mx-auto py-16 px-4">
-      {/* Heading */}
       <div className="text-center mb-6">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
           MANUFACTURING FACILITIES
         </h2>
         <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
-         DELCON INDUSTRIES is Equipped all latest Machinery required to manufacture Sheet metal Products, Plant is equipped For Fabricating, Deep Drawn Components & others sheet Metals components
+          DELCON INDUSTRIES is Equipped all latest Machinery required to
+          manufacture Sheet metal Products, Plant is equipped For Fabricating,
+          Deep Drawn Components & others sheet Metals components
         </p>
       </div>
 
-      {/* Splide Slider */}
       <Splide
         options={{
           type: "loop",
@@ -72,7 +72,9 @@ const ImageSlider = () => {
                   className="object-cover rounded-md"
                 />
               </div>
-              <p className="text-gray-700 text-center font-medium">{slide.text}</p>
+              <p className="text-gray-700 text-center font-medium">
+                {slide.text}
+              </p>
             </div>
           </SplideSlide>
         ))}

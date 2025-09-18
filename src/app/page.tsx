@@ -9,13 +9,11 @@ import ImageSlider from "./components/ImageSlider";
 export default function Home() {
   return (
     <>
-
       <div className="overflow-hidden">
         <div>
           <Navbar />
         </div>
       </div>
-
 
       <div className="overflow-hidden animate-fade-in mt-16 ">
         <div>
@@ -49,8 +47,14 @@ export default function Home() {
                       INTRODUCTION
                     </p>
                     <p className="text-[14px] md:text-[16px] font-[400] leading-[26px] text-white/90 mb-6 normal-case">
-                      &quot;We lay our foundation in early 1970’s as a leading trading firm Known as M/s I.D. STEELS PVT. LTD. (BASED IN LOHA MANDI,NARAINA, NEW DELHI, INDIA) trading of Iron & Steel Products (Cold Rolled Steel, Hot Rolled Steel, Galvanized Sheets, Color Coated Sheets & Coils etc). Back in year 2000 Company expanded and diversified its business segments from Trading to Manufacturing& Metals Fabrications.
-                      Sheet Metals P&quot;
+                      &quot;We lay our foundation in early 1970’s as a leading
+                      trading firm Known as M/s I.D. STEELS PVT. LTD. (BASED IN
+                      LOHA MANDI,NARAINA, NEW DELHI, INDIA) trading of Iron &
+                      Steel Products (Cold Rolled Steel, Hot Rolled Steel,
+                      Galvanized Sheets, Color Coated Sheets & Coils etc). Back
+                      in year 2000 Company expanded and diversified its business
+                      segments from Trading to Manufacturing& Metals
+                      Fabrications. Sheet Metals P&quot;
                     </p>
                   </div>
 
@@ -84,7 +88,6 @@ export default function Home() {
                       </svg>
                     </button>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -104,68 +107,67 @@ export default function Home() {
         </div>
       </div>
 
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
+            <div className="w-full md:w-1/2">
+              <h2 className="text-3xl sm:text-4xl font-bold text-blue-700 mb-6 text-center md:text-left">
+                ADVANTAGE
+              </h2>
+              <ul className="list-disc list-inside space-y-3 text-gray-700 text-sm sm:text-base">
+                <li>
+                  24x7 Ready Stock Available more than 1 Million Pieces –
+                  Filtration Components
+                </li>
+                <li>OEM Quality Components</li>
+                <li>
+                  Follow ISO 2768 Standards for Manufacturing Sheet Metals
+                  Components
+                </li>
+                <li>
+                  Dedicated R&D Team Available for New Product Development
+                </li>
+                <li>
+                  Reverse Engineering Available 3D Modeling, Prototyping, 2D
+                  Drawings & Design
+                </li>
+                <li>
+                  100% In-House Tooling, Dedicated Team for Die’s & tooling
+                </li>
+                <li>
+                  Capable of making complete and new Die & tool within 15 days
+                </li>
+                <li>Debt – Free Company</li>
+                <li>Exporting components Worldwide</li>
+                <li>More than 100 happy customers</li>
+              </ul>
+            </div>
 
-
-<section className="py-16 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
-      
-      {/* Left Column - Text */}
-      <div className="w-full md:w-1/2">
-        <h2 className="text-3xl sm:text-4xl font-bold text-blue-700 mb-6 text-center md:text-left">
-          ADVANTAGE
-        </h2>
-        <ul className="list-disc list-inside space-y-3 text-gray-700 text-sm sm:text-base">
-          <li>24x7 Ready Stock Available more than 1 Million Pieces – Filtration Components</li>
-          <li>OEM Quality Components</li>
-          <li>Follow ISO 2768 Standards for Manufacturing Sheet Metals Components</li>
-          <li>Dedicated R&D Team Available for New Product Development</li>
-          <li>Reverse Engineering Available 3D Modeling, Prototyping, 2D Drawings & Design</li>
-          <li>100% In-House Tooling, Dedicated Team for Die’s & tooling</li>
-          <li>Capable of making complete and new Die & tool within 15 days</li>
-          <li>Debt – Free Company</li>
-          <li>Exporting components Worldwide</li>
-          <li>More than 100 happy customers</li>
-        </ul>
-      </div>
-
-      {/* Right Column - Image */}
-      <div className="w-full md:w-1/2 flex justify-center">
-        <div className="relative w-full sm:w-4/5 md:w-full h-64 sm:h-80 md:h-125 bg-black rounded-[10px]">
-          <Image
-            src="/assets/images/tumblr_oa2j3d8cTn1smqdb1o1_400.gif"
-            alt="Advantage Image"
-            fill
-            className="object-contain rounded-lg shadow-lg"
-          />
+            <div className="w-full md:w-1/2 flex justify-center">
+              <div className="relative w-full sm:w-4/5 md:w-full h-64 sm:h-80 md:h-125 bg-black rounded-[10px]">
+                <Image
+                  src="/assets/images/tumblr_oa2j3d8cTn1smqdb1o1_400.gif"
+                  alt="Advantage Image"
+                  fill
+                  className="object-contain rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-  <div className="overflow-hidden animate-fade-in mt-0 ">
+      <div className="overflow-hidden animate-fade-in mt-0 ">
         <div>
           <ImageSlider />
         </div>
       </div>
-
-
-
 
       <div className="overflow-hidden animate-fade-up">
         <div>
           <CompanyFooter />
         </div>
       </div>
-
     </>
   );
 }

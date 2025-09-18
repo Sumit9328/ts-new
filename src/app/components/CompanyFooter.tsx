@@ -22,16 +22,35 @@ const CompanyFooter = () => {
   const importantLinks = ["Certificates", "Clients", "Quality", "Contact Us"];
 
   const socialIcons = [
-    { name: "Facebook", logo: "/assets/images/facebook.png", bgColor: "bg-white" },
-    { name: "Twitter", logo: "/assets/images/twitter.png", bgColor: "bg-white" },
-    { name: "LinkedIn", logo: "/assets/images/linkedin.png", bgColor: "bg-white" },
-    { name: "Instagram", logo: "/assets/images/instagram.png", bgColor: "bg-white" },
-    { name: "Pinterest", logo: "/assets/images/pinterest.png", bgColor: "bg-white" },
+    {
+      name: "Facebook",
+      logo: "/assets/images/facebook.png",
+      bgColor: "bg-white",
+    },
+    {
+      name: "Twitter",
+      logo: "/assets/images/twitter.png",
+      bgColor: "bg-white",
+    },
+    {
+      name: "LinkedIn",
+      logo: "/assets/images/linkedin.png",
+      bgColor: "bg-white",
+    },
+    {
+      name: "Instagram",
+      logo: "/assets/images/instagram.png",
+      bgColor: "bg-white",
+    },
+    {
+      name: "Pinterest",
+      logo: "/assets/images/pinterest.png",
+      bgColor: "bg-white",
+    },
   ];
 
   return (
     <div className="w-full">
-      {/* Partners Section */}
       <div className="bg-[var(--background)] py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="text-2xl md:text-4xl font-semibold text-[#0f172a] text-center mb-6 md:mb-8 tracking-tight">
@@ -61,13 +80,17 @@ const CompanyFooter = () => {
         </div>
       </div>
 
-      {/* Contact Information Bar */}
       <div className="bg-gradient-to-r from-blue-50 via-white to-blue-50 py-5 md:py-6 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-800">
-            {/* Address */}
             <div className="flex items-start space-x-3">
-              <Image src="/assets/images/loc.png" className="mt-1.5 md:mt-2" alt="Location" width={20} height={20} />
+              <Image
+                src="/assets/images/loc.png"
+                className="mt-1.5 md:mt-2"
+                alt="Location"
+                width={20}
+                height={20}
+              />
               <div>
                 <h3 className="font-bold text-base md:text-lg mb-1">Address</h3>
                 <p className="text-sm leading-relaxed normal-case">
@@ -77,24 +100,39 @@ const CompanyFooter = () => {
               </div>
             </div>
 
-            {/* Phone */}
             <div className="flex items-start space-x-3">
-              <Image src="/assets/images/phone.png" className="mt-1.5 md:mt-2" alt="Phone" width={20} height={20} />
+              <Image
+                src="/assets/images/phone.png"
+                className="mt-1.5 md:mt-2"
+                alt="Phone"
+                width={20}
+                height={20}
+              />
               <div>
                 <h3 className="font-bold text-base md:text-lg mb-1">CALL US</h3>
                 <p className="text-sm normal-case">
-                  SUPPORT: <span className="font-semibold">+91-9910-712-786</span>
+                  SUPPORT:{" "}
+                  <span className="font-semibold">+91-9910-712-786</span>
                 </p>
               </div>
             </div>
 
-            {/* Email */}
             <div className="flex items-start space-x-3">
-              <Image src="/assets/images/envelope.png" className="mt-1.5 md:mt-2" alt="Email" width={20} height={20} />
+              <Image
+                src="/assets/images/envelope.png"
+                className="mt-1.5 md:mt-2"
+                alt="Email"
+                width={20}
+                height={20}
+              />
               <div>
-                <h3 className="font-bold text-base md:text-lg mb-1">EMAIL US</h3>
+                <h3 className="font-bold text-base md:text-lg mb-1">
+                  EMAIL US
+                </h3>
                 <p className="text-sm">
-                  <span className="hover:underline cursor-pointer">accounts@delconindustries.in</span>
+                  <span className="hover:underline cursor-pointer">
+                    accounts@delconindustries.in
+                  </span>
                 </p>
               </div>
             </div>
@@ -102,24 +140,30 @@ const CompanyFooter = () => {
         </div>
       </div>
 
-      {/* Main Footer */}
       <div className="bg-[#103b84] text-white py-10 md:py-12">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Company Info */}
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <Image src="/assets/images/dalcon-logo.png" alt="Delcon Industries" width={150} height={50} />
+                <Image
+                  src="/assets/images/dalcon-logo.png"
+                  alt="Delcon Industries"
+                  width={150}
+                  height={50}
+                />
                 <div>
-                  <h3 className="text-lg md:text-xl font-bold text-blue-400">Delcon</h3>
+                  <h3 className="text-lg md:text-xl font-bold text-blue-400">
+                    Delcon
+                  </h3>
                 </div>
               </div>
 
               <p className="text-gray-300 text-sm leading-relaxed normal-case">
-                Manufacturers:-Automotive, Industrial & Locomotive Filtration Metals Components, Deep Drawn, Metals Stamping & Precise Sheet Metals Components Parts & Products.
+                Manufacturers:-Automotive, Industrial & Locomotive Filtration
+                Metals Components, Deep Drawn, Metals Stamping & Precise Sheet
+                Metals Components Parts & Products.
               </p>
 
-              {/* Social Icons */}
               <div className="flex space-x-3">
                 {socialIcons.map((social) => (
                   <a
@@ -138,24 +182,32 @@ const CompanyFooter = () => {
               </div>
             </div>
 
-            {/* Products */}
             <div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-white">PRODUCTS</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-white">
+                PRODUCTS
+              </h3>
               <ul className="space-y-2 md:space-y-3 p-0 m-0">
                 {products.map((product, index) => (
-                  <li key={index} className="text-[13px] md:text-[14px] text-slate-200 normal-case">
+                  <li
+                    key={index}
+                    className="text-[13px] md:text-[14px] text-slate-200 normal-case"
+                  >
                     {product}
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Important Links */}
             <div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-white">IMPORTANT LINKS</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-white">
+                IMPORTANT LINKS
+              </h3>
               <ul className="space-y-2 md:space-y-3 p-0 m-0">
                 {importantLinks.map((link, index) => (
-                  <li key={index} className="text-[13px] md:text-[14px] text-slate-200 normal-case">
+                  <li
+                    key={index}
+                    className="text-[13px] md:text-[14px] text-slate-200 normal-case"
+                  >
                     {link}
                   </li>
                 ))}
@@ -165,11 +217,17 @@ const CompanyFooter = () => {
         </div>
       </div>
 
-      {/* Bottom Copyright */}
       <div className="bg-black text-center py-3 md:py-4">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <p className="text-slate-300 text-xs md:text-sm">
-            © 2024 Delcon Industries. All rights reserved. | <span className="hover:text-white cursor-pointer">Privacy Policy</span> | <span className="hover:text-white cursor-pointer">Terms of Service</span>
+            © 2024 Delcon Industries. All rights reserved. |{" "}
+            <span className="hover:text-white cursor-pointer">
+              Privacy Policy
+            </span>{" "}
+            |{" "}
+            <span className="hover:text-white cursor-pointer">
+              Terms of Service
+            </span>
           </p>
         </div>
       </div>
