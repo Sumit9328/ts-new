@@ -106,45 +106,45 @@ export default function Home() {
 
 
 
-
 <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
-          
-          {/* Left Column - Text */}
-          <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-6">
-              ADVANTAGE
-            </h2>
-            <ul className="list-disc list-inside space-y-3 text-gray-700 text-sm md:text-base">
-              <li>24x7 Ready Stock Available more than 1 Million Pieces – Filtration Components</li>
-              <li>OEM Quality Components</li>
-              <li>Follow ISO 2768 Standards for Manufacturing Sheet Metals Components</li>
-              <li>Dedicated R&D Team Available for New Product Development</li>
-              <li>Reverse Engineering Available 3D Modeling, Prototyping, 2D Drawings & Design</li>
-              <li>100% In-House Tooling, Dedicated Team for Die’s & tooling</li>
-              <li>Capable of making complete and new Die & tool within 15 days</li>
-              <li>Debt – Free Company</li>
-              <li>Exporting components Worldwide</li>
-              <li>More than 100 happy customers</li>
-            </ul>
-          </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
+      
+      {/* Left Column - Text */}
+      <div className="w-full md:w-1/2">
+        <h2 className="text-3xl sm:text-4xl font-bold text-blue-700 mb-6 text-center md:text-left">
+          ADVANTAGE
+        </h2>
+        <ul className="list-disc list-inside space-y-3 text-gray-700 text-sm sm:text-base">
+          <li>24x7 Ready Stock Available more than 1 Million Pieces – Filtration Components</li>
+          <li>OEM Quality Components</li>
+          <li>Follow ISO 2768 Standards for Manufacturing Sheet Metals Components</li>
+          <li>Dedicated R&D Team Available for New Product Development</li>
+          <li>Reverse Engineering Available 3D Modeling, Prototyping, 2D Drawings & Design</li>
+          <li>100% In-House Tooling, Dedicated Team for Die’s & tooling</li>
+          <li>Capable of making complete and new Die & tool within 15 days</li>
+          <li>Debt – Free Company</li>
+          <li>Exporting components Worldwide</li>
+          <li>More than 100 happy customers</li>
+        </ul>
+      </div>
 
-          {/* Right Column - Image */}
-          <div className="md:w-1/2 flex justify-center">
-            <div className="relative w-full bg-black rounded-[10px] h-80 md:h-125">
-              <Image
-                src="/assets/images/tumblr_oa2j3d8cTn1smqdb1o1_400.gif" // replace with your image path
-                alt="Advantage Image"
-                fill
-                className="object-contain rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-
+      {/* Right Column - Image */}
+      <div className="w-full md:w-1/2 flex justify-center">
+        <div className="relative w-full sm:w-4/5 md:w-full h-64 sm:h-80 md:h-125 bg-black rounded-[10px]">
+          <Image
+            src="/assets/images/tumblr_oa2j3d8cTn1smqdb1o1_400.gif"
+            alt="Advantage Image"
+            fill
+            className="object-contain rounded-lg shadow-lg"
+          />
         </div>
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
+
 
 
 
